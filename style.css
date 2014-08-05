@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	background-color: #eeeeee;
+}
+
+body {
+	font-family: font-family: 'Merriweather', serif;;
+	color: #333333;
+	padding: 60px;
+	margin: 40px auto;
+}
+
+a:link {
+	color: #88cc33;
+	text-decoration: none;
+}
+a:visited {}
+a:hover {}
+a:focus {}
+a:active {}
+
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+
+
+
+
+/* styles for mosaic flow */
+.mosaicflow__column { float:left; }
+#images img {
+	display:block; 
+	width:100%; 
+	height:auto;}
+
+/* If device is at least 500px wide. */
+@media screen and (min-width: 500px) {
+	body {
+		width: 500px;
+		font-size: 125%
+	}
+}
+
+p {
+	font-family:'Merriweather', serif;
+}
