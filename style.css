@@ -19,11 +19,6 @@ a:link {
 	color: #88cc33;
 	text-decoration: none;
 }
-a:visited {}
-a:hover {}
-a:focus {}
-a:active {}
-
 
 img {
 	max-width: 100%;
@@ -31,17 +26,9 @@ img {
 	height: auto;
 }
 
-
-
-
-
-
-/* styles for mosaic flow */
-.mosaicflow__column { float:left; }
-#images img {
-	display:block; 
-	width:100%; 
-	height:auto;}
+.images {
+	padding: 20px;
+}
 
 /* If device is at least 500px wide. */
 @media screen and (min-width: 500px) {
