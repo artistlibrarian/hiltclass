@@ -1,8 +1,4 @@
-* {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
+
 
 html {
 	background-color: #CCCCB2;
@@ -18,16 +14,6 @@ body {
 a:link {
 	color: #7A7A52;
 	text-decoration: none;
-}
-
-img {
-	max-width: 100%;
-	width: auto;
-	height: auto;
-}
-
-.images {
-	padding: 20px;
 }
 
 /* If device is at least 500px wide. */

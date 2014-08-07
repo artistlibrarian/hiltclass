@@ -5,12 +5,32 @@
 <title>nostalgia for mud</title>
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.photoset-grid.min.js"></script>
+<script>
+$('.photoset-grid-custom').photosetGrid({
+  // Set the gutter between columns and rows
+  gutter: '5px',
+  // Manually set the grid layout
+  layout: '232',
+  // Wrap the images in links
+  highresLinks: true,
+  // Asign a common rel attribute
+  rel: 'print-gallery',
+
+  onInit: function(){},
+  onComplete: function(){
+    // Show the grid after it renders
+    $('.photoset-grid-custom').attr('style', '');
+  }
+});
+</script>
+
 </head>
 <body>
 	<header><h1>nostalgia for mud</h1></header>
-	<p>This is stuff I have made. It is mostly about childhood and false memory. <a href="http://nostalgia-for-mud.tumblr.com/">Nostalgia for Mud</a></p>
 
-	<section class="images">
+<div class="photoset-grid-custom" data-layout="232">
 		<img src="glenda.jpg" alt="glenda">
 		<img src="deerheaddoiley.jpg" alt="deer head doiley">
 		<img src="cartsquare.jpg" alt="medical cart detail">
@@ -18,12 +38,9 @@
 		<img src="brick.jpg" alt="brick">
 		<img src="diary2.jpg" alt="diary">
 		<img src="brickdetail.jpg" alt="brick detail">
-	</section>
+	</div>
 
-	<aside>
-		<h1>Supporting Content</h1>
-		<p>Things you want people to know but that are secondary in importance. Pretty much everything goes here.</p>
-	</aside>
+		<p>This is stuff I have made. It is mostly about childhood and false memory. <a href="http://nostalgia-for-mud.tumblr.com/">Nostalgia for Mud</a></p>
 
 </body>  
 </html>
