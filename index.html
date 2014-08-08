@@ -6,41 +6,86 @@
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery.photoset-grid.min.js"></script>
+<script src="isotope.pkgd.min.js"></script>
 </head>
 <body>
 <header><h1>nostalgia for mud</h1></header>
 
-<div class="photoset-grid-custom" data-layout="323">
-<img src="diary2.jpg" alt="diary" data-highres="http://shannonmarierobinson.com">
-<img src="brickdetail.jpg" alt="brick detail" data-highres="http://shannonmarierobinson.com">
-<img src="deerheaddoiley.jpg" alt="deer head doiley" data-highres="http://shannonmarierobinson.com">
-<img src="brick.jpg" alt="brick" data-highres="http://shannonmarierobinson.com">
-<img src="cartsquare.jpg" alt="medical cart detail" data-highres="http://shannonmarierobinson.com">
-<img src="hairpp.jpg" alt="hair" data-highres="http://shannonmarierobinson.com">
-<img src="glenda.jpg" alt="glenda" data-highres="http://shannonmarierobinson.com">
-<img src="pins.jpg" alt="pins" data-highres="http://shannonmarierobinson.com">
+<div class="isotope" data-layout="323">
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="diary2.jpg" alt="diary" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="brickdetail.jpg" alt="brick detail" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="diary2.jpg" alt="diary" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="deerheaddoiley.jpg" alt="deer head doiley" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="brick.jpg" alt="brick" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="cartsquare.jpg" alt="medical cart detail" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="hairpp.jpg" alt="hair" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="glenda.jpg" alt="glenda" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+    <a class="item" href="http://shannonmarierobinson.com">
+        <img src="pins.jpg" alt="pins" data-highres="http://shannonmarierobinson.com">
+        <div class="text">
+        <h2>Label Here</h2>
+        <p>Description here. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </a>
+
 </div>
 
 		<p>This is stuff I have made. It is mostly about childhood and false memory. <a href="http://nostalgia-for-mud.tumblr.com/">Nostalgia for Mud</a></p>
 
 <script>
-$('.photoset-grid-custom').photosetGrid({
-  // Set the gutter between columns and rows
-  gutter: '10px',
-  // Manually set the grid layout
-  layout: '323',
-  // Wrap the images in links
-  highresLinks: true,
-  // Asign a common rel attribute
-  rel: 'print-gallery',
-
-  onInit: function(){},
-  onComplete: function(){
-    // Show the grid after it renders
-    $('.photoset-grid-custom').attr('style', '');
-  }
+var $container = $('.isotope').isotope({
+  // main isotope options
+  itemSelector: '.item',
+  layoutMode: 'masonry',
 });
 </script>
-</body>  
+</body>
 </html>
